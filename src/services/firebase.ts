@@ -3,16 +3,6 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/database';
 
-// const firebaseConfig = {
-//   apiKey: "AIzaSyAaf2VM7CRezt_c8_fQLvUua8-1SbR3sxA",
-//   authDomain: "letmeask-380d9.firebaseapp.com",
-//   databaseURL: "https://letmeask-380d9-default-rtdb.firebaseio.com",
-//   projectId: "letmeask-380d9",
-//   storageBucket: "letmeask-380d9.appspot.com",
-//   messagingSenderId: "489394238556",
-//   appId: "1:489394238556:web:3f5f5ce1ee65de4130a299"
-// };
-
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_API_KEY,
   authDomain: process.env.REACT_APP_AUTH_DOMAIN,
