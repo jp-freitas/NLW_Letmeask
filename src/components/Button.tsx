@@ -9,9 +9,14 @@ export function Button() {
     );
   }
 
+  function decrement() {
+    setCounter(
+      counter - 1
+    );
+  }
 
   return (
-    <button onClick={increment}>
+    <button onClick={increment} onAuxClick={decrement}>
       {counter}
     </button>
   );

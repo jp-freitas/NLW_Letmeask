@@ -5,7 +5,6 @@ function App() {
     <div>
       <h1>Hello Word</h1>
       <Button />
-      <Button />
     </div>
   );
 }
