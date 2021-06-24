@@ -6,12 +6,12 @@ import logoImg from '../assets/images/logo.svg';
 
 import { Button } from '../components/Button';
 import { database } from '../services/firebase';
-import { useAuth } from '../hooks/use.Auth';
+import { useAuth } from '../hooks/useAuth';
 
 import '../styles/auth.scss';
 
 export function NewRoom() {
-    const { user } = useAuth(); 
+    const { user } = useAuth();
     const history = useHistory();
     const [newRoom, setNewRoom] = useState('');
 
@@ -29,7 +29,7 @@ export function NewRoom() {
             authorId: user?.id,
         });
 
-        history.push(`/rooms/${firebaseRoom.key}`); 
+        history.push(`/rooms/${firebaseRoom.key}`);
     }
 
     return (
@@ -43,11 +43,11 @@ export function NewRoom() {
                 <div className="main-content">
                     <img src={logoImg} alt="Letmeask" />
                     <h2>Criar uma nova sala</h2>
-                    <form onSubmit={handleCreateRoom}> 
+                    <form onSubmit={handleCreateRoom}>
                         <input
                             type="text"
                             placeholder="Nome da Sala"
-                            onChange={ event => setNewRoom(event.target.value) }
+                            onChange={event => setNewRoom(event.target.value)}
                             value={newRoom}
                         />
                         <Button type="submit">
