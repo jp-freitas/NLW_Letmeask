@@ -1,7 +1,9 @@
+import { useEffect } from 'react';
 import { FormEvent, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 
-import logoImg from '../assets/images/logo.svg';
+import logoDarkImg from '../assets/images/logo-dark.svg';
+
 import { Button } from '../components/Button';
 import { Question } from '../components/Question';
 import { RoomCode } from '../components/RoomCode';
@@ -17,10 +19,17 @@ type RoomParams = {
 
 export function Room() {
     const { user } = useAuth();
+    const history = useHistory();
     const params = useParams<RoomParams>();
     const [newQuestion, setNewQuestion] = useState('');
     const roomId = params.id;
     const { title, questions } = useRoom(roomId);
+
+    useEffect(() => {
+        if (!user) {
+            history.push('/');
+        }
+    }, [user, history]);
 
     async function handleSendQuestion(event: FormEvent) {
         event.preventDefault();
@@ -62,7 +71,7 @@ export function Room() {
         <div id="page-room">
             <header>
                 <div className="content">
-                    <img src={logoImg} alt="Letmeask" />
+                    <img src={logoDarkImg} alt="Letmeask" />
                     <RoomCode code={roomId} />
                 </div>
             </header>

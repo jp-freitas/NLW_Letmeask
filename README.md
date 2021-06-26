@@ -29,4 +29,4 @@ to run the application - yarn start
 - [x] Aula 02 - Maximum Speed
 - [x] Aula 03 - In Orbit
 - [x] Aula 04 - Landing
-- [ ] Aula 05 - Surface Exploration
+- [x] Aula 05 - Surface Exploration

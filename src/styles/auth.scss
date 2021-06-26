@@ -3,6 +3,14 @@
     align-items: stretch;
     height: 100vh;
 
+    &.dark {
+        background: #333;
+        
+        h2 {
+            color: #f8f8f8;
+        }
+    }
+
     aside {
         flex: 7;
         background: #835afd;
@@ -46,7 +54,23 @@
         align-items: stretch;
         text-align: center;
 
+        .toggle-area {
+            .toggle-theme {
+                background: transparent;
+                border: none;
+                width: 30px;
+                cursor: pointer;
+
+                > .fa-moon {
+                    color: #fff;
+                    width: 30px;
+                    text-align: end;
+                }
+            }
+        }
+
         > img {
+            margin-top: 50px;
             align-self: center;
         }
 
