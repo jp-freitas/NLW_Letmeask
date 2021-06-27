@@ -10,9 +10,9 @@
 
 ## Tecnologies
 This project was developed with the following technologies:
-- .[React].(https://reactjs.org)
-- .[Firebase].(https://firebase.google.com/)
-- .[TypeScript].(https://www.typescriptlang.org/)
+- [React](https://reactjs.org)
+- [Firebase](https://firebase.google.com/)
+- [TypeScript](https://www.typescriptlang.org/)
 
 ## Letmeask Project
 To use this project, you will need do somethings.
