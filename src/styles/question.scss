@@ -1,4 +1,8 @@
 .question {
+  &.dark {
+    background: #dbdcdd;
+  }
+
   background: #fefefe;
   border-radius: 8px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
@@ -11,15 +15,14 @@
   &.highlighted {
     background: #f4f0ff;
     border: 1px solid #835afd;
-    
+
     footer .user-info span {
-      color: #29292E;
+      color: #29292e;
     }
   }
 
   &.answered {
     background: #dbdcdd;
-     
   }
 
   p {
@@ -59,7 +62,7 @@
       background: transparent;
       cursor: pointer;
       transition: filter 0.2s;
-      
+
       &.like-button {
         display: flex;
         align-items: flex-end;
