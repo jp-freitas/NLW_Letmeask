@@ -53,7 +53,7 @@ The application will be avaliable in yout browser in the address: http://localho
 - [x] Aula 05 - Surface Exploration
 
 ### To-Do list
-- [ ] Dark Mode
+- [x] Dark Mode
 - [ ] Styled Components
 - [ ] ESLint, Prettier
 - [ ] Responsive
