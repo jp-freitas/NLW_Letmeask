@@ -45,7 +45,7 @@
     }
 
     main {
-        flex: 8;
+        flex: 9;
         padding: 0 32px;
         display: flex;
         align-items: center;
@@ -160,6 +160,22 @@
             height: 1px;
             background: #a8a8b3;
             margin-left: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 468px) {
+    #page-auth {
+        flex-direction: column;
+        align-items: flex-stretch;
+
+        aside {
+            order: 2;
+        }
+
+        main {
+            order: 1;
+            min-height: 660px;
         }
     }
 }
