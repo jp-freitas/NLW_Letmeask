@@ -1,12 +1,12 @@
 #page-room {
-	height: 100vh;
-
+	min-height: 100vh;
 	&.dark {
-		background: #333;
+		min-height: 100vh;
+		background: #242726;
 
 		header {
 			border-bottom: 1px solid #737380;
-			background: #333;
+			background: #242726;
 
 			button {
 				background: transparent;
@@ -45,7 +45,12 @@
 			}
 
 			.question {
-				background: #737380;
+				background: #4d4d4d;
+			}
+
+			.highlighted {
+				border: 1px solid #f8f8f8;
+				background: #29292e;
 			}
 
 			.user-info {
