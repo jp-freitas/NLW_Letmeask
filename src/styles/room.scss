@@ -194,6 +194,33 @@
 	}
 }
 
+@media screen and (max-width: 420px) {
+	#page-room {
+		main {
+			max-width: 380px;
+			padding-bottom: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 375px) {
+	#page-room {
+		main {
+			max-width: 340px;
+			padding-bottom: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 360px) {
+	#page-room {
+		main {
+			max-width: 330px;
+			padding-bottom: 20px;
+		}
+	}
+}
+
 @media screen and (max-width: 320px) {
 	#page-room {
 		main {
